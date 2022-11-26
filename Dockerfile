@@ -6,4 +6,4 @@ RUN gradlelew clean build
 FROM openjdk:17-jre-slim
 COPY --from=gradleimage /src/ /sdrtrunk/
 WORKDIR /sdrtrunk
-ENTRYPOINT ["./gradlew" "clean" "run"]
+ENTRYPOINT ["./gradlew", "clean", "run"]
